@@ -23,7 +23,7 @@
 
 如上定义了一个函数名为`greet`，参数为`name`的函数, 其返回值是`(str "Hello, " name)`生成的字符串。
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (defn greet  [name]  (str "Hello, " name) )
@@ -45,7 +45,7 @@ my-stuff.core=> (greet "Clojure!")
 上面定义了函数名为`messenger`的函数，其有两种调用方式：无参形式和传递一个参数。
 
 
-** 示例 **
+**示例**
 ```
 my-stuff.core=> (defn messenger
            #_=>   ([]     (messenger "Hello world!"))
@@ -79,7 +79,7 @@ my-stuff.core=> (source print)
 注意：`&`和`more`之间需要有空格。
 
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (defn hello [a & b] (print a b))
@@ -113,7 +113,7 @@ abc ([1 2 3] {:b 20, :a 10})nil
 第二种是定义greet变量为匿名函数。
 
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (def greet (fn [name] (str "Hello, " name)))
@@ -124,7 +124,7 @@ my-stuff.core=> (greet "Clojure!")
 
 对于`fn`匿名函数，有一个更加简单的，使用`#()`定义方式：
 
-** 示例 **
+**示例**
 
 ```
 ; %取第一个参数
@@ -171,7 +171,7 @@ my-stuff.core=> (greet "Clojure!" "test")
 同时定义`hello-er`变量，对应的是`fn [who]`的返回函数。
 
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (defn messenger-builder [greeting]
@@ -197,7 +197,7 @@ nil
 (apply f 1 2 3 '(4))    ;; same as  (f 1 2 3 4)
 ```
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (defn messenger

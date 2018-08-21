@@ -75,7 +75,7 @@ Generating a project called my-stuff based on the 'app' template.
 ```
 
 
-** 项目目录结构**
+**项目目录结构**
 
 ```bash
 $ tree

@@ -31,7 +31,7 @@ Clojure中一切均是表达式，包括控制流。
 
 ### Truth
 
-Clojure中，所有的值都可以进行`true`或`false`的判定，`false`的值有两种: `false`和nil。其它的值都是true。** 0也是true, 这一点和其它语言完全不同 **
+Clojure中，所有的值都可以进行`true`或`false`的判定，`false`的值有两种: `false`和nil。其它的值都是true。**0也是true, 这一点和其它语言完全不同**
 
 
 ```
@@ -60,7 +60,7 @@ Special Form
 则执行`then`.
 
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (if true "true" "false")
@@ -74,7 +74,7 @@ nil
 
 `do`类似大括号的作用，构建一个大的代码块。
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (if (even? 5)
@@ -108,7 +108,7 @@ Macro
 
 `when`相当于没有`else`的`if`表达式.
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (when (neg? -10) (println "-10 is neg"))
@@ -119,7 +119,7 @@ my-stuff.core=> (when (neg? -10) (println "-10 is neg"))
 
 `cond`类似于`C`中的`switch...case`语句。
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (def a 10)
@@ -155,7 +155,7 @@ Macro
 `case`和`cond`类似，只不过效率更高, 因为`test-constant`必须是常量.
 
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (defn foo [x]
@@ -191,7 +191,7 @@ Macro
 从`0`到`n-1`, 重复执行`body`表达式。
 
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (dotimes [i 3]
@@ -208,7 +208,7 @@ my-stuff.core=> (dotimes [i 3]
 遍历给定的序列对象。
 
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (doseq [i [1 2 4]] (println i))
@@ -234,7 +234,7 @@ my-stuff.core=> (doseq [letter [:a :b] number (range 3)] (println [letter number
 这个并不是其它语言中的`for`控制语句不一样，而是类似`doseq`
 用于将不同的序列，重新组件成一个新的list。
 
-** 示例 **
+**示例**
 
 ```
 my-stuff.core=> (for [letter [:a :b]
