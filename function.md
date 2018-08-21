@@ -86,7 +86,7 @@ my-stuff.core=> (defn hello [a & b] (print a b))
 #'my-stuff.core/hello
 
 my-stuff.core=> (hello "abc" [1 2 3] {:a 10, :b 20})
-20abc ([1 2 3] {:b 20, :a 10})nil
+abc ([1 2 3] {:b 20, :a 10})nil
 ```
 定义了`hello`函数，除了固定的第一个参数`a`之外，还定义了一个变参参数`b`.
 
